@@ -17,7 +17,7 @@ h2 {
 	color:#3f3faf;
 	border: solid 1px black;
 	margin: 5px;
-	background-color: white;
+	background: linear-gradient(white, #ffefaf);
 }
 
 div#zentai {
