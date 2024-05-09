@@ -8,6 +8,7 @@ p.info {
 }
 
 h1 {
+	color: white;
 	text-shadow: navy 1px 0 10px;
 	background-color: #7f7fcf;
 }
@@ -33,7 +34,7 @@ div#zentai > div {
 	background-color: #ffefaf;
 }
 
-img.sign {
+img {
     float: right;   /* 画像を右に浮かせる */
 
     width: 100px;
