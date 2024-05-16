@@ -20,26 +20,27 @@ function hantei() {
     let yoso = 4;
     console.log(counter+'回目の予想：'+yoso);
   // 課題3-1: 正解判定する
-    if (yoso===kotae){
-        if (flag===0){
+    if (counter<4&&flag===0){
+        if (yoso===kotae){
             console.log('おおおのれ！当てられてしもうた！');
             flag = flag+1;
         }
-        else if (flag===2){
-            console.log('何をしておるのだ？ゲームは終わっとるぞ？')
+        else if (yoso<kotae){
+            console.log('くくく、お主、小さいぞ！');
         }
-        else if (flag>2){
-            console.log('やめろうぅ、お主の勝ちじゃ、妾を虐めるでない！いやなのじゃぁぁぁああ')
+        else {
+            console.log('そんなに大きいわけがなかろう！');
         }
-        flag = flag+1;
     }
-    else if (yoso<kotae){
-        console.log('くくく、お主、小さいぞ！')
+    else if(counter>3&&flag===0){
+        console.log('はっはっは!3回も当てられぬとは、お主の負けじゃの!');
     }
-    else {
-        console.log('そんなに大きいわけがなかろう！')
+    else if(counter<3&&flag>0){
+        console.log('何をしておるのだ？ゲームは終わっとるのじゃ。');
+    }
+    else{
+        console.log('やっ、やめろうぅ、お主の勝ちじゃ、妾を虐めるでない！いやなのじゃぁぁぁああ');
     }
     counter = counter +1;
-
   // 課題3-1における出力先はコンソール
 }
