@@ -45,7 +45,6 @@ for (let i of w){
 }
 // 練習4-5 箇条書き追加プログラム
 let ka = document.querySelector('ul#location');
-
 for (let i of data){
 	let li = document.createElement('li');
 	li.textContent = i.name+'... 経度：'+i.lat+'緯度：'+i.lng;
