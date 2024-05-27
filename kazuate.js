@@ -22,6 +22,11 @@ function hentai() {
     let i = document.querySelector('input[name="num"]');
     yoso = i.value;
     console.log(counter+'回目の予想：'+yoso);
+    let count = document.querySelector('span#kaisu');
+    let yosoanswer = document.querySelector('span#answer');
+    count.textContent = counter;
+    yosoanswer.textContent = yoso;
+
   // 課題3-1: 正解判定する
     if (counter<4&&flag===0){
         if (yoso > kotae){
