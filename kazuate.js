@@ -5,7 +5,7 @@ console.log('答え（デバッグ用）: ' + kotae);
 let kaisu = 0;
 let counter = 1;
 let flag = 0;
-let yoso = 0;
+let yoso = document.querySelector('input[name="num"]');
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
@@ -18,7 +18,6 @@ hantei();
 function hantei() {
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   // kotae と yoso が一致するかどうか調べて結果を出力
-    
     console.log(counter+'回目の予想：'+yoso);
   // 課題3-1: 正解判定する
     if (counter<4&&flag===0){
