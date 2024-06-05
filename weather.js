@@ -1,26 +1,19 @@
 
 let citydata=[
-  ["Cairo",360630],
-  ["Moscow",524901],
-  ["Johannesburg",993800],
-  ["Beijing",1816670],
-  ["Tokyo",1850147],
-  ["Singapore",1880252],
-  ["Sydney",2147714],
-  ["London",2643743],
-  ["Paris",2968815],
-  ["Rio de Janeiro",3451189],
-  ["New York",5128581],
-  ["Los Angeles",5368361],
+  ["Cairo",360630,'sunny.jpg'],
+  ["Moscow",524901,'cloud-cloudy.jpg'],
+  ["Johannesburg",993800,'層積雲.png'],
+  ["Beijing",1816670,'層積雲.png'],
+  ["Tokyo",1850147,'層積雲.png'],
+  ["Singapore",1880252,'層積雲.png'],
+  ["Sydney",2147714,'Rain.jpg'],
+  ["London",2643743,'層積雲.png'],
+  ["Paris",2968815,'霧.webp'],
+  ["Rio de Janeiro",3451189,'cloud-cloudy.jpg'],
+  ["New York",5128581,'cloud-cloudy.jpg'],
+  ["Los Angeles",5368361,'層積雲.png'],
   ]
 
-  let imgpack=[
-    "cloud-cloudy.jpg",
-    "Rain.jpg",
-    "sunny.jpg",
-    "層積雲",
-    "霧"
-  ]
 
 // let b = document.querySelector('#sendRequest0');
 // b.addEventListener('click', sendRequest);
@@ -74,9 +67,12 @@ b12.addEventListener('click', function(){
 });
 var body = document.querySelector('body');
 
+
+
 function changeBackground(backgroundUrl) {
   body.style.backgroundImage = 'url(' + backgroundUrl + ')';
 }
+
 
 function sendRequest(n) {
   // URL を設定
@@ -86,6 +82,8 @@ function sendRequest(n) {
   // let Cid = citydata[i.value-1][1];
   let Cid = citydata[i-1][1];
   let url = 'https://www.nishita-lab.org/web-contents/jsons/openweather/'+Cid+'.json';
+  
+  changeBackground(citydata[i-1][2]);
 
   // 通信開始
   axios.get(url)
