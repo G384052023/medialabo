@@ -1,4 +1,5 @@
 
+
 let citydata=[
   ["Cairo",360630,'sunny.jpg'],
   ["Moscow",524901,'cloud-cloudy.jpg'],

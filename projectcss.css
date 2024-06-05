@@ -1,3 +1,5 @@
+
+
 p {
 	color: white;
 	text-shadow: navy 1px 0 10px;
@@ -51,6 +53,7 @@ div#zentai > div {
 }
 
 .button-container {
+	background-color: rgba(173, 173, 175, 0.2); 
 	float: right;
     margin-right: 20px;
 }
