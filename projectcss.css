@@ -1,5 +1,6 @@
 p {
-	color: navy;
+	color: white;
+	text-shadow: navy 1px 0 10px;
 }
 
 p.info {
@@ -17,7 +18,7 @@ h2 {
 	color:#3f3faf;
 	/*border: solid 1px black;*/
 	margin: 5px;
-	background: linear-gradient(0.25turn, white, skyblue);
+	background: linear-gradient(0.25turn, white, skyblue,);
 }
 
 div#zentai {
@@ -33,6 +34,51 @@ div#zentai > div {
 	background-color: #ffefaf;
 }
 
-img {
-    float: right;   /* 画像を右に浮かせる */
+/* img {float: right;   } */
+
+.weather-button {
+    background-color: rgba(0, 0, 255, 0.1); 
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    margin: 1px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.weather-button {
+    background-color: rgba(0, 0, 255, 0.1); 
+}
+
+.button-container {
+	float: right;
+    margin-right: 20px;
+}
+
+th {
+
+    background-color: rgba(173, 173, 175, 0.2); 
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+td {
+
+    background-color: rgba(173, 173, 175, 0.2); 
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+	
+}
+
+.elements{
+	background-image: url('cloud-cloudy.jpg');background-size: cover;background-repeat: no-repeat;background-attachment: fixed;
 }

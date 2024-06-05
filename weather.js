@@ -1,3 +1,27 @@
+
+let citydata=[
+  ["Cairo",360630],
+  ["Moscow",524901],
+  ["Johannesburg",993800],
+  ["Beijing",1816670],
+  ["Tokyo",1850147],
+  ["Singapore",1880252],
+  ["Sydney",2147714],
+  ["London",2643743],
+  ["Paris",2968815],
+  ["Rio de Janeiro",3451189],
+  ["New York",5128581],
+  ["Los Angeles",5368361],
+  ]
+
+  let imgpack=[
+    "cloud-cloudy.jpg",
+    "Rain.jpg",
+    "sunny.jpg",
+    "層積雲",
+    "霧"
+  ]
+
 // let b = document.querySelector('#sendRequest0');
 // b.addEventListener('click', sendRequest);
 let b1 = document.querySelector('#sendRequest1');
@@ -48,21 +72,11 @@ let b12 = document.querySelector('#sendRequest12');
 b12.addEventListener('click', function(){
   sendRequest(12);
 });
+var body = document.querySelector('body');
 
-let citydata=[
-["Cairo",360630],
-["Moscow",524901],
-["Johannesburg",993800],
-["Beijing",1816670],
-["Tokyo",1850147],
-["Singapore",1880252],
-["Sydney",2147714],
-["London",2643743],
-["Paris",2968815],
-["Rio de Janeiro",3451189],
-["New York",5128581],
-["Los Angeles",5368361],
-]
+function changeBackground(backgroundUrl) {
+  body.style.backgroundImage = 'url(' + backgroundUrl + ')';
+}
 
 function sendRequest(n) {
   // URL を設定

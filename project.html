@@ -11,41 +11,46 @@
     <link rel="stylesheet" href="projectcss.css">
     
   </head>
-  <body style="background-image: url('cloud-cloudy.jpg');background-size: cover;background-repeat: no-repeat;background-attachment: fixed;">
-    <h2>世界の天気（検索結果1件）</h2> 
+  <body class="elements">
+    <h1>世界の天気（検索結果1件）</h1> 
 
     <!-- <br> -->
     <!-- <label for="ads"></label> -->
     <!-- <input type="text" name="ads" id="ads"> -->
     <!-- <button id="sendRequest0">pick the No. of city that you want.</button> -->
     <!-- <br> -->
-    <button id="sendRequest1">No:1 Cairo カイロ （エジプト）</button>
-    <br>
-    <button id="sendRequest2">No:2 Moscow モスクワ （ロシア）</button>
-    <br>
-    <button id="sendRequest3">No:3 Johannesburg ヨハネスブルク （南アフリカ）</button>
-    <br>
-    <button id="sendRequest4">No:4 Beijing 北京 （中華人民共和国）</button>
-    <br>
-    <button id="sendRequest5">No:5 Tokyo 東京 （日本）</button>
-    <br>
-    <button id="sendRequest6">No:6 Singapore シンガポール </button>
-    <br>
-    <button id="sendRequest7">No:7 Sydney シドニー （オーストラリア）</button>
-    <br>
-    <button id="sendRequest8">No:8 London ロンドン （イギリス）</button>
-    <br>
-    <button id="sendRequest9">No:9 Paris パリ （フランス）</button>
-    <br>
-    <button id="sendRequest10">No:10 Rio de Janeiro リオデジャネイロ （ブラジル）</button>
-    <br>
-    <button id="sendRequest11">No:11 New York ニューヨーク （アメリカ合衆国）</button>
-    <br>
-    <button id="sendRequest12">No:12 Los Angeles ロサンゼルス （アメリカ合衆国）</button>
-    <br>
+    <div class="button-container">
+        <button id="sendRequest1" class="weather-button">No:1 Cairo カイロ （エジプト）</button>
+        <br>
+        <button id="sendRequest2" class="weather-button">No:2 Moscow モスクワ （ロシア）</button>
+        <br>
+        <button id="sendRequest3" class="weather-button">No:3 Johannesburg ヨハネスブルク （南アフリカ）</button>
+        <br>
+        <button id="sendRequest4" class="weather-button">No:4 Beijing 北京 （中華人民共和国）</button>
+        <br>
+        <button id="sendRequest5" class="weather-button">No:5 Tokyo 東京 （日本）</button>
+        <br>
+        <button id="sendRequest6" class="weather-button">No:6 Singapore シンガポール </button>
+        <br>
+        <button id="sendRequest7" class="weather-button">No:7 Sydney シドニー （オーストラリア）</button>
+        <br>
+        <button id="sendRequest8" class="weather-button">No:8 London ロンドン （イギリス）</button>
+        <br>
+        <button id="sendRequest9" class="weather-button">No:9 Paris パリ （フランス）</button>
+        <br>
+        <button id="sendRequest10" class="weather-button">No:10 Rio de Janeiro リオデジャネイロ （ブラジル）</button>
+        <br>
+        <button id="sendRequest11" class="weather-button">No:11 New York ニューヨーク （アメリカ合衆国）</button>
+        <br>
+        <button id="sendRequest12" class="weather-button">No:12 Los Angeles ロサンゼルス （アメリカ合衆国）</button>
+        <br>
+    </div>
 
 
-    
+    <p>
+        <strong>都市名: <span id="city">北京市</span></strong>
+    </p>
+
     <li>
     <table>
         <thead>
@@ -90,8 +95,5 @@
             </tr>
         </tbody>
     </table>
-    <p>
-        <strong>都市名: <span id="city">北京市</span></strong>
-    </p>
     </li>
   </body>
