@@ -3,12 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>project</title>
-    <script src="weather.js" defer></script>
-    <link rel="stylesheet" href="projectcss.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    
+    <script src="weather.js" defer></script>
+
+    <link rel="stylesheet" href="projectcss.css">
+    
   </head>
-  <body>
+  <body style="background-image: url('cloud-cloudy.jpg');background-size: cover;background-repeat: no-repeat;background-attachment: fixed;">
     <h2>世界の天気（検索結果1件）</h2> 
+
+    <!-- <br> -->
+    <!-- <label for="ads"></label> -->
+    <!-- <input type="text" name="ads" id="ads"> -->
+    <!-- <button id="sendRequest0">pick the No. of city that you want.</button> -->
+    <!-- <br> -->
+    <button id="sendRequest1">No:1 Cairo カイロ （エジプト）</button>
+    <br>
+    <button id="sendRequest2">No:2 Moscow モスクワ （ロシア）</button>
+    <br>
+    <button id="sendRequest3">No:3 Johannesburg ヨハネスブルク （南アフリカ）</button>
+    <br>
+    <button id="sendRequest4">No:4 Beijing 北京 （中華人民共和国）</button>
+    <br>
+    <button id="sendRequest5">No:5 Tokyo 東京 （日本）</button>
+    <br>
+    <button id="sendRequest6">No:6 Singapore シンガポール </button>
+    <br>
+    <button id="sendRequest7">No:7 Sydney シドニー （オーストラリア）</button>
+    <br>
+    <button id="sendRequest8">No:8 London ロンドン （イギリス）</button>
+    <br>
+    <button id="sendRequest9">No:9 Paris パリ （フランス）</button>
+    <br>
+    <button id="sendRequest10">No:10 Rio de Janeiro リオデジャネイロ （ブラジル）</button>
+    <br>
+    <button id="sendRequest11">No:11 New York ニューヨーク （アメリカ合衆国）</button>
+    <br>
+    <button id="sendRequest12">No:12 Los Angeles ロサンゼルス （アメリカ合衆国）</button>
+    <br>
+
+
+    
     <li>
     <table>
         <thead>
@@ -20,45 +57,41 @@
         <tbody>
             <tr>
                 <th scope="row">緯度</th>
-                <td>116.3972</td>
+                <td id="keido">116.3972</td>
             </tr>
             <tr>
                 <th scope="row">経度</th>
-                <td>39.9075</td>
+                <td id="ido">39.9075</td>
             </tr>
             <tr>
                 <th scope="row">天気</th>
-                <td>曇りがち</td>
-                <img class="cloud" src="cloud-cloudy.jpg"/>
+                <td id="tenki">曇りがち</td>
+                
             </tr>
             <tr>
                 <th scope="row">最低気温</th>
-                <td>9.94</td>
+                <td id="saitei">9.94</td>
             </tr>
             <tr>
                 <th scope="row">最高気温</th>
-                <td>9.94</td>
+                <td id="saikou">9.94</td>
             </tr>
             <tr>
                 <th scope="row">湿度</th>
-                <td>14</td>
+                <td id="ondo">14</td>
             </tr>
             <tr>
                 <th scope="row">風速</th>
-                <td>2.65</td>
+                <td id="fuusoku">2.65</td>
             </tr>
             <tr>
                 <th scope="row">風向</th>
-                <td>197</td>
+                <td id="fuukou">197</td>
             </tr>
         </tbody>
     </table>
     <p>
-        <strong>都市名: 北京市</strong>
-        <br>
-        <label for="ads"></label>
-        <input type="text" name="ads" id="ads">
-        <button id="get_ads">which city do you want to check ?!</button>
+        <strong>都市名: <span id="city">北京市</span></strong>
     </p>
     </li>
   </body>
