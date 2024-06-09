@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Roguelike Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+        }
+        #gameInfo {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        #gameCanvas {
+            border: 1px solid #fff;
+            background-color: #000;
+            margin-top: 20px;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Roguelike Game</h1>
+    <p>Use the arrow keys to move your character.</p>
+    <p>Press 'A' to shoot, 'S' to shoot a beam (uses 1 MP).</p>
+    <div id="gameInfo">
+        <p>HP: <span id="hp">10</span></p>
+        <p>MP: <span id="mp">10</span></p>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
