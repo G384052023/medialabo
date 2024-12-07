@@ -16,7 +16,9 @@ const player = {
 const enemy = {
     x: 10,
     y: 10,
-    color: 'red'
+    color: 'red',
+    hp: 1,
+    mp: 1
 };
 
 const bullets = [];
@@ -99,3 +101,7 @@ function drawGame() {
 }
 
 drawGame();
+
+
+
+setInterval
